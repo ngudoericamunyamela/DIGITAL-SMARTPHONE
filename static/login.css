@@ -1,0 +1,56 @@
+
+
+body {
+    background-image: url("./Pin\ by\ BeadFreeForever\ on\ Scenery\ _\ Sunset\ iphone\ wallpaper\,\ Iphone\ wallpaper\ landscape\,\ Beac_.jpeg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  .container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7ac5e0;
+    color: #862727;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

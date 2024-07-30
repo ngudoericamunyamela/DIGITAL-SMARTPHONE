@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Application</h1>
+    </header>
+    <main>
+        <div id="form-container">
+            <h2>Add or Update Item</h2>
+            <input type="text" id="item-name" placeholder="Item Name">
+            <button onclick="addItem()">Add</button>
+            <button onclick="updateItem()">Update</button>
+        </div>
+        <div id="items-container">
+            <h2>Items</h2>
+            <ul id="item-list">
+                <!-- Items will be populated dynamically -->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Web Application. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

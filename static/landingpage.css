@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./image\ copy\ 5.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #a1cbed;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* footer {
+  background-color: #8eaaf2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+.button-container button {
+  display: inline-block;
+  margin-right: 50px; /* Optional: Adds space between buttons */
+  background-color: #f8f6f2;
+  width: 120px;
+  height: 30px;
+  border-radius: 0px; 
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 30px;
+}
+  
+   
+  
+  
+  
