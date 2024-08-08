@@ -3,7 +3,7 @@ from ..Models.user_models import User
 
 
 def landingpage():
-   return render_template("index.html")
+   return render_template("landingpage.html")
 
 # Signup client
 def signup():

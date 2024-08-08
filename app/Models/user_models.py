@@ -1,25 +1,24 @@
 from .. import mongo
 
+from .. import mongo
+
 class User:
 
+    # User Login & Register
     def add_user_to_db(user_data):
         return mongo.db.user.insert_one(user_data)
     
-    def  signup (user_data):
-        User = mongo.db.collection.insert_one(user_data)
-        return list(mongo.db.user.find({}, {'_id, 0'}))
-    
-    def  login (user_data):
-        User = mongo.db.collection.insert_one(user_data)
-        return list(mongo.db.user.find({}, {'_id, 0'}))
-    
+    # Fix
+    def login_user(email, password):
+         mongo.db.admin.find_one(email, password)
+         return str() 
 
-    def  admin_signup_get (user_data):
-        User = mongo.db.admin_user.insert_one(user_data)
-        return list(mongo.db.admin_user.find({}, {'_id, 0'}))
+     # Admin Login & Register
+    def add_admin_to_db(admin_data):
+        return mongo.db.admin.insert_one(admin_data)
     
-    def  admin_login_get (user_data):
-        User = mongo.db.admin_user.insert_one(user_data)
-        return list(mongo.db.admin_user.find({}, {'_id, 0'}))
-
-    
+    # Fix
+    def admin_login(admin_data):
+         mongo.db.admin.find_one(admin_data)
+         return str() 
+       
