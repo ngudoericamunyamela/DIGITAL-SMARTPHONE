@@ -1,24 +1,29 @@
-from .. import mongo
-
+from pymongo import MongoClient
 from .. import mongo
 
 class User:
-
-    # User Login & Register
-    def add_user_to_db(user_data):
-        return mongo.db.user.insert_one(user_data)
     
-    # Fix
-    def login_user(email, password):
-         mongo.db.admin.find_one(email, password)
-         return str() 
+    
+    def find_user(query):
+        return mongo.db.users.find_one(query)
 
-     # Admin Login & Register
+    def insert_user(user_data):
+        return mongo.db.users.insert_one(user_data)
+    
+    def is_user_exist(username, email):
+        return mongo.db.users.find_one({'$or': [{'username': username}, {'email': email}]})
+
+
+    def find_by_username_and_password(username, password):
+        return mongo.db.users.find_one({'username': username, 'password': password})
+    
+ 
     def add_admin_to_db(admin_data):
-        return mongo.db.admin.insert_one(admin_data)
+        return mongo.db.admin_register.insert_one(admin_data)
     
-    # Fix
     def admin_login(admin_data):
-         mongo.db.admin.find_one(admin_data)
-         return str() 
+        # The method should return the result of the query
+        result = mongo.db.admin_register.find_one(admin_data)
+        return result
+
        

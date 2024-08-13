@@ -5,7 +5,8 @@ app = Blueprint('user', __name__)
 
 
 app.route('/')(user_controllers.landing)
-app.route('/services')(user_controllers.services)
+
+app.route('/products')(user_controllers.products)
 
 # Client
 app.route('/signup', methods=['GET', 'POST'])(user_controllers.signup)
