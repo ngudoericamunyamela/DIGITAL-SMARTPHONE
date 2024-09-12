@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <link rel="stylesheet" href="/static/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form" action="{{url_for('user.login')}}" method="post" onsubmit="return validateForm()"></form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">login</button>
+
+            <div class="account-message">
+                <p>If you dont have an account <a href="{{url_for('user.signup')}}">click here</a> </p>
+        </form>
+    </div>
+
+    <script src="/app/static/login.js"></script>
+</body>
+</html>
